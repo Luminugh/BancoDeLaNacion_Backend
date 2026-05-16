@@ -1,10 +1,10 @@
 spring.application.name=banco-de-la-nacion-backend
 
-server.port=8081
+server.port=8080
 
-spring.datasource.url=jdbc:postgresql://aws-1-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require
-spring.datasource.username=postgres.adddjqpxagkftumldkrr
-spring.datasource.password=bancodelanacion
+spring.datasource.url=jdbc:postgresql://localhost:5432/banco_nacion
+spring.datasource.username=postgres
+spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 spring.jpa.hibernate.ddl-auto=update
