@@ -2,62 +2,16 @@ BancoDeLaNacion_Backend
 
 # BancoDeLaNacion_Backend
 
-Este repositorio contiene el backend (Spring Boot) del proyecto "Banco de la Nación".
+Desde la raíz del proyecto, ejecutar los siguientes comandos:
 
-**Requisitos**
-- Java 17 o superior instalado y disponible en PATH.
-- Git instalado.
-- Acceso a internet para descargar dependencias Maven.
-
-**Instrucciones de build (desde la raíz del proyecto)**
-
-Windows (usando el wrapper incluido):
-
-```powershell
-.\mvnw.cmd clean package
-# o para omitir tests:
-.\mvnw.cmd clean package -DskipTests
-```
-
-Linux / macOS:
+Compilar:
 
 ```bash
-./mvnw clean package
-# o para omitir tests:
-./mvnw clean package -DskipTests
+mvn clean install
 ```
 
-El artefacto resultante se encontrará en `target/` con nombre similar a:
-
-```
-target/banco-de-la-nacion-backend-0.0.1-SNAPSHOT.jar
-```
-
-Para ejecutar la aplicación localmente:
+Ejecutar la aplicación:
 
 ```bash
-java -jar target/banco-de-la-nacion-backend-0.0.1-SNAPSHOT.jar
+mvn spring-boot:run
 ```
-
-Configuración local:
-- El fichero `src/main/resources/application.properties` contiene la configuración por defecto (puede necesitar ajustar URL de la base de datos, usuario y contraseña).
-- El puerto por defecto está en `server.port` (actualmente `8081`).
-
-**Cometer y subir los cambios al repositorio remoto**
-
-1. Añadir cambios y commitear:
-
-```bash
-git add README.md
-git commit -m "docs: agregar instrucciones de build y push"
-```
-
-2. Hacer push al remoto (reemplazar `main` por la rama correspondiente si es necesario):
-
-```bash
-git push origin main
-```
-
-Si usas autenticación con token (PAT) en HTTPS, introduce el token cuando Git lo solicite, o configura SSH para evitar solicitar credenciales.
-
-Si quieres, puedo commitear y pushear estos cambios por ti ahora.
